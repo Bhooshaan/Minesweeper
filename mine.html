@@ -1,0 +1,135 @@
+<html>
+    <head><title>Minesweeper</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="mines.css">
+        <link rel="icon" href="./Icons/bombs.jpg">
+    </head>
+    <body>
+    <h1 class="minesweeper"> MINESWEEPER </h1>
+    <a href="./mine.html" class="restart"><button type="button" id="smiley">😀</button></a>
+    <p class="score" id="score">Score : 00</p>
+    <div class="matrix">
+    <div class="row" id="r1">
+        <button type="button" class="b" id="1" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="2" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="3" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="4" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="5" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="6" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="7" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="8" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="9" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="10" onclick="openmine(this.id)">&nbsp</button>
+    </div>
+    <div class="row" id="r2">
+        <button type="button" class="b" id="11" onclick="openmine(this.id)">&nbsp </button>
+        <button type="button" class="b" id="12" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="13" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="14" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="15" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="16" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="17" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="18" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="19" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="20" onclick="openmine(this.id)">&nbsp</button>
+    </div>
+    <div class="row" id="r3">
+        <button type="button" class="b" id="21" onclick="openmine(this.id)">&nbsp </button>
+        <button type="button" class="b" id="22" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="23" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="24" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="25" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="26" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="27" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="28" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="29" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="30" onclick="openmine(this.id)">&nbsp</button>
+    </div>
+    <div class="row" id="r4">
+        <button type="button" class="b" id="31" onclick="openmine(this.id)">&nbsp </button>
+        <button type="button" class="b" id="32" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="33" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="34" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="35" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="36" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="37" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="38" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="39" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="40" onclick="openmine(this.id)">&nbsp</button>
+    </div>
+    <div class="row" id="r5">
+        <button type="button" class="b" id="41" onclick="openmine(this.id)">&nbsp </button>
+        <button type="button" class="b" id="42" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="43" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="44" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="45" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="46" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="47" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="48" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="49" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="50" onclick="openmine(this.id)">&nbsp</button>
+    </div>
+    <div class="row" id="r6">
+        <button type="button" class="b" id="51" onclick="openmine(this.id)">&nbsp </button>
+        <button type="button" class="b" id="52" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="53" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="54" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="55" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="56" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="57" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="58" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="59" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="60" onclick="openmine(this.id)">&nbsp</button>
+    </div>
+    <div class="row" id="r7">
+        <button type="button" class="b" id="61" onclick="openmine(this.id)">&nbsp </button>
+        <button type="button" class="b" id="62" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="63" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="64" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="65" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="66" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="67" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="68" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="69" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="70" onclick="openmine(this.id)">&nbsp</button>
+    </div>
+    <div class="row" id="r8">
+        <button type="button" class="b" id="71" onclick="openmine(this.id)">&nbsp </button>
+        <button type="button" class="b" id="72" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="73" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="74" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="75" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="76" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="77" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="78" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="79" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="80" onclick="openmine(this.id)">&nbsp</button>
+    </div>
+    <div class="row" id="r9">
+        <button type="button" class="b" id="81" onclick="openmine(this.id)">&nbsp </button>
+        <button type="button" class="b" id="82" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="83" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="84" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="85" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="86" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="87" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="88" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="89" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="90" onclick="openmine(this.id)">&nbsp</button>
+    </div>
+    <div class="row" id="r10">
+        <button type="button" class="b" id="91" onclick="openmine(this.id)">&nbsp </button>
+        <button type="button" class="b" id="92" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="93" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="94" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="95" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="96" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="97" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="98" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="99" onclick="openmine(this.id)">&nbsp</button>
+        <button type="button" class="b" id="100" onclick="openmine(this.id)">&nbsp</button>
+    </div>
+    </div>
+    <script src="./minesjs.js"></script>
+    </body>
+</html>

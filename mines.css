@@ -1,0 +1,112 @@
+@media screen and (max-width:800px) {
+    .b{
+        width: 8vw;
+        height: 8vw;
+        background-color:  rgba(223, 219, 219, 0.788);
+        margin:0%;
+        padding: 0%;
+        border: outset rgb(39, 37, 37) 0.1%;
+    }
+    /* div>button:first-child{
+        margin-left: 30%;
+    } */
+    
+    body{
+        background-image: url("./Icons/pawel-czerwinski-OY3slACa3ec-unsplash.jpg");
+    }
+    .minesweeper{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: calc(5vw);
+        color: chocolate;
+        
+    }
+    .matrix{
+        /* position: absolute; */
+            text-align: center;
+            font-size: 0px;
+            padding: auto;
+            /* top: 20%;
+            left:8% */
+    }
+    .score{
+            display: block;
+            /* position: absolute; */
+            text-align: center;
+            font-size: 2vw;
+            color: lime;
+            /* top: 7%;
+            left:45%; */
+        }
+        .b:enabled:hover{
+            background-color:#6b9362;
+            border: solid rgba(172, 23, 23, 0.61) 0.1%;
+        }
+        .b:disabled{
+            color:blue;
+            opacity:0.8;
+            background: darkslategrey;
+            font-weight: bold;
+        }
+        .restart{
+            display: block;
+            text-align: center;
+        }
+    }
+    @media screen and (min-width:800px) {
+        .b{
+            font-weight: bold;
+            width:3vw;
+            height: 3vw;
+            /* background-color: rgb(229, 223, 235); */
+            background-color: rgba(223, 219, 219, 0.788);
+            margin:0%;
+            padding: 0%;
+            border: outset rgb(39, 37, 37) 0.1%;
+        }
+        .b:disabled{
+            color:blue;
+            background-color: lavenderblush;
+            opacity:0.8;
+            font-weight: bold;
+        }
+        .minesweeper{
+        text-align: center;
+        font-family: Helvetica, sans-serif;
+        font-size: calc(5vw);
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f2f6f8+0,d8e1e7+50,b5c6d0+51,e0eff9+100;Grey+Gloss+%232
+        color: rgb(235,241,246); /* Old browsers */
+        /* color: -moz-linear-gradient(top, rgb(235,241,246) 0%, rgb(137,195,235) 76%, rgb(137,195,235) 76%, rgb(171,211,238) 100%, rgb(213,235,251) 100%); 
+        /*color: -webkit-linear-gradient(top, rgb(235,241,246) 0%,rgb(137,195,235) 76%,rgb(137,195,235) 76%,rgb(171,211,238) 100%,rgb(213,235,251) 100%); 
+        color: linear-gradient(to bottom, rgb(235,241,246) 0%,rgb(137,195,235) 76%,rgb(137,195,235) 76%,rgb(171,211,238) 100%,rgb(213,235,251) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#d5ebfb',GradientType=0 );  */
+        color:#e6e8fa
+        }
+        body{
+            background-image: url("./Icons/pawel-czerwinski-OY3slACa3ec-unsplash.jpg");
+        }
+        .matrix{
+            text-align: center;
+            font-size: 0px;
+            align-content: center;
+            border: red 20px;
+            padding: 0%;
+        }
+        .score{
+            text-align: right;
+            font-size: 2vw;
+            color: lime;
+        }
+        .b:enabled:hover{
+            background-color:#6b9362;
+            border: solid rgba(172, 23, 23, 0.61) 0.1%;
+
+        }
+        .restart{
+            position: absolute;
+            left:48%;
+        }
+        /* .re{
+            text-align: center;
+        } */
+    }
